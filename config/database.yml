@@ -84,4 +84,5 @@ production:
   <<: *default
   database: solidus_aws_production
   username: solidus_aws
+  url: <%= ENV['DATABASE_URL'] %>
   password: <%= ENV['SOLIDUS_AWS_DATABASE_PASSWORD'] %>
